@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/galleryImage"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/galleryclothtype"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/gallerydateadded"
+                android:text="ClothType"
+                android:textSize="16sp"
+                android:layout_alignLeft="@+id/gallerydateadded" />
+
+
+            <TextView
+                android:id="@+id/gallerydateadded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="29dp"
+                android:text="Date Added"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="19dp" />
+
+            <Button
+                android:id="@+id/delete_from_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="13dp"
+                android:paddingVertical="2dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_button"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

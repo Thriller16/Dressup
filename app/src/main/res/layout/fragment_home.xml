@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/screen"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/handshake" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:text="Shake!!"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/noImageYetHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="You havent added any clothes to your collection"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:overScrollMode="never"
+        app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager"
+        app:viewUpdater="com.jwbinc.app.dressupapk.cards.CardsUpdater"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

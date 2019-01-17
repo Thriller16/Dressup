@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:background="@drawable/screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="DressUp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:drawablePadding="12dp"
+            android:padding="16dp"
+            android:id="@+id/email_reg"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:textColorHint="#fff"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"/>
+
+        <EditText
+            android:drawablePadding="12dp"
+            android:padding="16dp"
+            android:textColorHint="#fff"
+            android:id="@+id/passw_reg"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:id="@+id/reg_btn"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"/>
+
+        <TextView
+            android:id="@+id/go_to_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:text="Already have an account?" />
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="match_parent"
+            android:elevation="1dp"
+            android:layout_marginTop="40dp"
+
+            android:paddingVertical="12dp"
+            android:paddingLeft="16dp"
+            facebook:com_facebook_login_text="Log in with Facebook"
+            android:layout_marginHorizontal="3dp"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleButton_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:layout_width="match_parent"
+            android:id="@+id/twitterButton_reg"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

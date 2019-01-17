@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/screen"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:elevation="16dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/selectedImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/takeWithCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_camera_black_24dp" />
+
+
+                <ImageButton
+                    android:id="@+id/pickFromGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_insert_photo_black_24dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="20dp"
+                android:text="What part of your collection will you like to add this to?"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/clothTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Preffered weather for wearing this cloth"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sunnyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunny" />
+
+
+                <RadioButton
+                    android:id="@+id/rainyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rainy" />
+
+                <RadioButton
+                    android:id="@+id/cloudycheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cloudy" />
+
+                <RadioButton
+                    android:id="@+id/snowyCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Snowy" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/addToCollection"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:paddingHorizontal="40dp"
+                android:text="SAVE"
+                android:layout_marginBottom="70dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

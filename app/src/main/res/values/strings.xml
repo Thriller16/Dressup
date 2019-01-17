@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DressUp!</string>
+    <string name="facebook_app_id">271797640196067</string>
+    <string name="googleauthclient">186608457698-0iskt7ref1ngtq47i9oge1kthdrlap6u.apps.googleusercontent.com</string>
+    <!--<string name="fabric_api_key">d778fc68e9c267965455b4427e3f73fd2b36850c</string>-->
+    <string name="twiiter_consumer_api">4RIOFBK33OhB8Fzjr0l1KwDkR</string>
+    <string name="twitter_api_secret">BN4XBTrSqFBqMjusaQp3jrWYvqjDZ8h9ZUeIJbwc0KN6FbBGcT</string>
+    <string name="openweather_api_key">12014e0edf988d44790b159cf30ce1ba</string>
+</resources>
